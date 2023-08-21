@@ -1,9 +1,38 @@
-import { Header } from "../../components/Header"
-import { Summary } from "../../components/Summary"
-import { TransactionsContainer, TransactionsTable, PriceHighlight  } from "./styles"
-import { SearchForm } from "../../components/SearchForm"
+import { useEffect } from "react";
+import { useState } from "react";
+import { Header } from "../../components/Header";
+import { Summary } from "../../components/Summary";
+import { TransactionsContainer, TransactionsTable, PriceHighlight  } from "./styles";
+import { SearchForm } from "../../components/SearchForm";
+import { TransactionsContext } from "../../components/contexts/TransactionsContext";
+import { useContext } from "react";
+
+// interface Transactions {
+//     id: number;
+//     description: string;
+//     type: 'income' | 'outcome';
+//     price: number;
+//     category: string;
+//     createdAt: string;
+// }
 
 export function Transactions() {
+       
+    const { transactions } = useContext(TransactionsContext);
+
+//     const [transactions, setTransactions] = useState<Transactions>([])
+//        async function loadTransactions() {
+//        const response = await fetch("http://localhost:3000/transactions");
+//        const data = await response.json();
+
+//        setTransactions(data);
+//     }
+//      useEffect(() => {
+
+//     loadTransactions();
+    
+//    }, [])
+ 
     return (
         <div>
             <Header />
@@ -14,18 +43,23 @@ export function Transactions() {
             <SearchForm />        
                 <TransactionsTable>
                     <tbody>
-                        <tr>
-                            <td width="50%">Desenvolvimento de site</td>
-                            <td>
-                            <PriceHighlight variant="income">
-                            R$ 12.000,00
-                            </PriceHighlight>
-                            </td>
-                            <td>Venda</td>
-                            <td>13/04/2022</td>
-                        </tr>
+                        {transactions.map(transaction => {
+                            return (
+                            <tr key={transaction.id}>
+                              <td width="50%">{transaction.description}</td>
+                                <td>
+                                <PriceHighlight variant={transaction.type}>
+                                {transaction.price}
+                                </PriceHighlight>
+                                </td>
+                                <td>{transaction.category}</td>
+                                <td>{transaction.createdAt}</td>
+                            </tr>
+                            )
+                        })}
+                    
                        
-                        <tr>
+                        {/* <tr>
                             <td width="50%">Hamburguer</td>
                             <td>
                             <PriceHighlight variant="outcome">
@@ -34,7 +68,7 @@ export function Transactions() {
                             </td>
                             <td>Alimentação</td>
                             <td>10/04/2022</td>
-                        </tr>
+                        </tr> */}
 
                         {/* <tr>
                             <td width="50%">Aluguel do apartamento</td>
