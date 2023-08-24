@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-import { useState } from "react";
 import { Header } from "../../components/Header";
 import { Summary } from "../../components/Summary";
 import { TransactionsContainer, TransactionsTable, PriceHighlight  } from "./styles";

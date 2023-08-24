@@ -82,9 +82,9 @@ export const TransactionType = styled(RadioGroup.Root)`
   margin-top: 0.5rem;
 `;
 
-interface TransactionTypeButtonProps {
-  variant: "income" | "outcome";
-}
+// interface TransactionTypeButtonProps {
+//   variant: "income" | "outcome";
+// }
 
 export const TransactionTypeButton = styled(RadioGroup.Item)`
   background: ${(props) => props.theme["gray-700"]};
