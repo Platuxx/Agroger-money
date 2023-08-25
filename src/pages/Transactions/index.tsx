@@ -3,7 +3,7 @@ import { Summary } from "../../components/Summary";
 import { TransactionsContainer, TransactionsTable, PriceHighlight  } from "./styles";
 import { SearchForm } from "../../components/SearchForm";
 import { TransactionsContext } from "../../components/contexts/TransactionsContext";
-import { useContext } from "react";
+import { useContextSelector } from "use-context-selector";
 import { priceFormatter, dateFormatter } from "../../utils/formatter";
 
 // interface Transactions {
@@ -17,7 +17,9 @@ import { priceFormatter, dateFormatter } from "../../utils/formatter";
 
 export function Transactions() {
        
-    const { transactions } = useContext(TransactionsContext);
+    const transactions  = useContextSelector(TransactionsContext, (context) => {
+        return context.transactions
+    });
  
     return (
         <div>

@@ -10,10 +10,10 @@
     },
     {
       "id": 2,
-      "description": "Comida",
+      "description": "Comidas pro escritorio",
       "type": "outcome",
       "category": "Alimentação",
-      "price": 57349,
+      "price": 12478,
       "createdAt": "2023-08-18T12:44:46.077Z"
     },
     {
@@ -63,6 +63,30 @@
       "type": "income",
       "createdAt": "2023-08-24T13:10:39.392Z",
       "id": 8
+    },
+    {
+      "description": "Investimento Atletico MG",
+      "category": "Investimento",
+      "price": 37876,
+      "type": "outcome",
+      "createdAt": "2023-08-24T13:42:33.671Z",
+      "id": 9
+    },
+    {
+      "description": "Lucro Atletico MG",
+      "category": "Lucro",
+      "price": 12349,
+      "type": "income",
+      "createdAt": "2023-08-24T13:43:04.848Z",
+      "id": 10
+    },
+    {
+      "description": "Camisa",
+      "category": "Compra",
+      "price": 125,
+      "type": "outcome",
+      "createdAt": "2023-08-25T13:09:15.402Z",
+      "id": 11
     }
   ]
 }
