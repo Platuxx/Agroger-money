@@ -87,6 +87,86 @@
       "type": "outcome",
       "createdAt": "2023-08-25T13:09:15.402Z",
       "id": 11
+    },
+    {
+      "description": "Comida",
+      "category": "Alimentação",
+      "price": 25,
+      "type": "outcome",
+      "createdAt": "2023-08-29T12:59:00.909Z",
+      "id": 13
+    },
+    {
+      "description": "Teclado",
+      "category": "Compra",
+      "price": 267,
+      "type": "outcome",
+      "createdAt": "2023-08-29T13:00:10.370Z",
+      "id": 14
+    },
+    {
+      "description": "Monitor",
+      "category": "Compra",
+      "price": 387,
+      "type": "outcome",
+      "createdAt": "2023-08-29T13:34:48.917Z",
+      "id": 15
+    },
+    {
+      "description": "Suco",
+      "category": "Compra",
+      "price": 12,
+      "type": "outcome",
+      "createdAt": "2023-08-29T13:44:36.939Z",
+      "id": 16
+    },
+    {
+      "description": "Setup Completo",
+      "category": "Compra",
+      "price": 13465,
+      "type": "outcome",
+      "createdAt": "2023-08-29T13:46:35.342Z",
+      "id": 17
+    },
+    {
+      "description": "Lucro eSports",
+      "category": "Lucro",
+      "price": 53234,
+      "type": "income",
+      "createdAt": "2023-08-29T13:47:42.569Z",
+      "id": 18
+    },
+    {
+      "description": "Venda de aplicativo",
+      "category": "Vendas",
+      "price": 155765,
+      "type": "income",
+      "createdAt": "2023-08-29T13:56:34.237Z",
+      "id": 19
+    },
+    {
+      "description": "Arroz",
+      "category": "Alimentação",
+      "price": 20,
+      "type": "outcome",
+      "createdAt": "2023-08-30T11:25:20.525Z",
+      "id": 20
+    },
+    {
+      "description": "2 startup",
+      "category": "Investimento",
+      "price": 347702,
+      "type": "outcome",
+      "createdAt": "2023-08-30T11:33:11.814Z",
+      "id": 21
+    },
+    {
+      "description": "Iphone 14 pro max",
+      "category": "Compra",
+      "price": 7499,
+      "type": "outcome",
+      "createdAt": "2023-08-30T11:34:23.407Z",
+      "id": 22
     }
   ]
 }

@@ -50,17 +50,6 @@ export function NewTransactionModal() {
          type,
       })
 
-      //    const response = await api.post('transactions', {
-      //       description ,
-      //       category,
-      //       price,
-      //       type,
-      //       createdAt: new Date(),
-      //   })
-
-   
-      // console.log(response.data);
-
       reset();
   }
 
@@ -76,24 +65,51 @@ export function NewTransactionModal() {
                   </CloseButton>
 
                   <form onSubmit={handleSubmit(handleCreateNewTransactions)}>
-                     <input 
+                     
+                     <Controller
+                     control={control}
+                     name="description"
+                     render={({
+                        field
+                     }) => (
+                        <input
                         type="text" 
                         placeholder='Descrição' 
                         required 
                         {...register('description')}
+                        />
+                     )}
                      />
-                     <input 
-                        type="number" 
-                        placeholder='Preço' 
-                        required 
-                        {...register('price', { valueAsNumber: true})}
+                     
+                     <Controller
+                        control={control}
+                        name="price"
+                        render={({
+                           field
+                        }) => (
+                          <input
+                           type="number" 
+                           placeholder='Preço' 
+                           required 
+                           {...register('price', { valueAsNumber: true})}
+                          />
+                        )}
                      />
-                     <input 
-                        type="text" 
-                        placeholder='Categotoria' 
+                    
+                    <Controller
+                      control={control}
+                      name="description"
+                      render={({
+                         field
+                      }) => (
+                        <input
+                        type="text"
+                        placeholder='Categoria' 
                         required 
                         {...register('category')}
                      />
+                      )}
+                  /> 
 
                      <Controller
                        control={control}
@@ -118,7 +134,7 @@ export function NewTransactionModal() {
                        }}
                      />
 
-                    
+                  
 
                      <button type="submit" disabled={isSubmitting}>
                         Cadastrar
