@@ -74,9 +74,11 @@ export function NewTransactionModal() {
                      }) => (
                         <input
                         type="text" 
+                        value={field.value}
                         placeholder='Descrição' 
                         required 
-                        {...register('description')}
+                        // {...register('description')}
+                        onChange={field.onChange}
                         />
                      )}
                      />
@@ -89,24 +91,28 @@ export function NewTransactionModal() {
                         }) => (
                           <input
                            type="number" 
+                           value={field.value}
                            placeholder='Preço' 
                            required 
                            {...register('price', { valueAsNumber: true})}
+                           onChange={field.onChange}
                           />
                         )}
                      />
                     
                     <Controller
                       control={control}
-                      name="description"
+                      name="category"
                       render={({
                          field
                       }) => (
                         <input
                         type="text"
+                        value={field.value}
                         placeholder='Categoria' 
                         required 
-                        {...register('category')}
+                        // {...register('category')}
+                        onChange={field.onChange}
                      />
                       )}
                   /> 

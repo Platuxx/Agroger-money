@@ -167,6 +167,86 @@
       "type": "outcome",
       "createdAt": "2023-08-30T11:34:23.407Z",
       "id": 22
+    },
+    {
+      "description": "Pastel",
+      "category": "Alimentação",
+      "price": 15,
+      "type": "outcome",
+      "createdAt": "2023-08-31T11:50:47.397Z",
+      "id": 23
+    },
+    {
+      "description": "X Bacon",
+      "category": "Alimentação",
+      "price": 25,
+      "type": "outcome",
+      "createdAt": "2023-08-31T11:54:17.038Z",
+      "id": 24
+    },
+    {
+      "description": "Camisa",
+      "category": "Compra",
+      "price": 125,
+      "type": "outcome",
+      "createdAt": "2023-08-31T12:07:29.326Z",
+      "id": 25
+    },
+    {
+      "description": "A - K - A",
+      "category": "ws",
+      "price": 12,
+      "type": "outcome",
+      "createdAt": "2023-08-31T12:34:13.672Z",
+      "id": 26
+    },
+    {
+      "description": "Curso Marketing Digital",
+      "category": "Compra",
+      "price": 2345,
+      "type": "outcome",
+      "createdAt": "2023-08-31T13:44:34.930Z",
+      "id": 27
+    },
+    {
+      "description": "Ifood TOTAL",
+      "category": "Alimentação",
+      "price": 3456,
+      "type": "outcome",
+      "createdAt": "2023-08-31T13:45:21.239Z",
+      "id": 28
+    },
+    {
+      "description": "Consulta com Rodrigo Goes",
+      "category": "Consulta",
+      "price": 2186,
+      "type": "outcome",
+      "createdAt": "2023-08-31T13:46:36.298Z",
+      "id": 29
+    },
+    {
+      "description": "Edital Agroger",
+      "category": "Investimento",
+      "price": 1237000,
+      "type": "income",
+      "createdAt": "2023-08-31T13:48:13.648Z",
+      "id": 30
+    },
+    {
+      "description": "Compra do Discord",
+      "category": "Compra",
+      "price": 1259000,
+      "type": "outcome",
+      "createdAt": "2023-08-31T13:49:07.177Z",
+      "id": 31
+    },
+    {
+      "description": "Lucro TOTAL de tudo",
+      "category": "Lucro",
+      "price": 1987345098,
+      "type": "income",
+      "createdAt": "2023-08-31T13:50:36.298Z",
+      "id": 32
     }
   ]
 }
